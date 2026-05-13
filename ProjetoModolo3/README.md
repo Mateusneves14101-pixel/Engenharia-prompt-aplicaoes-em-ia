@@ -93,35 +93,3 @@ O projeto possui **23 erros ativos**. Os principais padrões são:
 | `Question` | `quiz_custom_quiz`, `question_text_text`, `number_number`, `correct_answer_text`, `explanation_text` |
 | `AnswerOption` | `option_text_text`, `question_custom_question` |
 | `StreakDay` | `user_user`, `date_date` |
-
-
-O **SysQuiz** é uma plataforma de estudo baseada em quizzes para **Análise de Sistemas**,
-com foco em acompanhamento de desempenho, sequências de estudo e organização
-por temas e níveis de dificuldade.
-
----
-
-## 📄 Páginas (6 no total)
-
-### 1. `index` — Início / Painel Pessoal
-Página de boas-vindas personalizada para o usuário logado. Contém:
-- Cabeçalho com saudação dinâmica: *"Pronto para o próximo desafio, [nome]?"*
-- Métricas rápidas: Quizzes Realizados, Média Recente (30d) e Sequência Atual
-- **Semana de Estudos:** Calendário semanal com dias ativos (Seg–Dom)
-- **Pontos a Melhorar:** Lista de temas com baixo percentual de acerto, com botão *"Iniciar quiz sugerido"*
-- **Acesso Rápido por Tema:** Grade de temas com desempenho por nível (Fácil / Médio / Difícil) e botão *"Praticar [Tema]"*
-
-> ⚡ Workflow: botão `suggestion-cta` redireciona para outra página (`ChangePage`)
-
----
-
-### 2. `dashboard` — Painel de Desempenho
-Página analítica detalhada com visão histórica do progresso:
-- **Filtros:** Período, Tema e Nível
-- **Cards de métricas:** Quizzes Realizados, Média de Acertos, Evolução Mensal (vs. mês anterior) e Sequência Atual
-- Gráfico de Evolução de Desempenho com comparativo *"Média da Turma"*
-- Calendário de sequência semanal (Seg–Dom)
-- **Desempenho por Tema:** Barras com percentual por área (Eng. de Prompt, Prototipagem, Programação, UX/Jornada)
-- **Matriz Tema × Nível:** Tabela com acerto médio e esforço por combinação de tema e dificuldade
-- **Pontos a Melhorar:** Combinações com menos de 60% de acerto — botão *"Praticar agora"*
-- **
